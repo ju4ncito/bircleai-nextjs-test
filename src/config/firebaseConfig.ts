@@ -5,13 +5,13 @@ import { getAnalytics } from "firebase/analytics";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC81bjLbGwpjEQUslMU9S0L8iPgs2aA44c",
-  authDomain: "bircleai-dashboard.firebaseapp.com",
-  projectId: "bircleai-dashboard",
-  storageBucket: "bircleai-dashboard.appspot.com",
-  messagingSenderId: "31502732795",
-  appId: "1:31502732795:web:c93262a0d6fc02c01c0f5e",
-  measurementId: "G-GB01LV0F6N"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
 };
 
 
